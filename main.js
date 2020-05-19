@@ -1,6 +1,11 @@
-import { library, icon } from "@fortawesome/fontawesome-svg-core";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
+$(function () {
+  $(".menu-toggle, .fa-times").on("click", function () {
+    $("nav").toggleClass("active");
+    $("overlay").toggleClass("menu-open");
+  });
 
-library.add(faCamera);
-
-const camera = icon({ prefix: "fas", iconName: "camera" });
+  $(".overlay").on("click", function () {
+    $("nav").removeClass("active");
+    $("this").removeClass("menu-open");
+  });
+});
