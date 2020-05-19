@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Helvetica, sans-serif";
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 10px;
   color: #333333;
 }
@@ -73,7 +73,7 @@ nav ul {
   height: 8rem;
   list-style: none;
   display: flex;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 nav ul li {
@@ -122,7 +122,7 @@ nav ul li:hover {
 }
 
 .tone-2 {
-  background-color: #f9e2ba;
+  background-color: #bd9c68;
   height: 100vh;
   flex: 1;
   position: relative;
@@ -136,4 +136,70 @@ nav ul li:hover {
   transform: translateY(-50);
 }
 
-/* Stop at 23:44 */
+.product-info {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-info h1 {
+  padding-top: 4rem;
+  font-size: 4rem;
+  font-family: "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1.5px;
+  margin-right: -2px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 60%;
+}
+
+.product-info p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 8px;
+}
+
+.product-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+.product-info h3 {
+  position: absolute;
+  font-size: 1.6rem;
+  margin: 4rem;
+  padding-left: 4rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.btn {
+  display: flex;
+  padding: 2rem;
+  color: #141110;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: all 0.5s;
+}
+
+.info-btns {
+  display: flex;
+}
+
+.discover-btn {
+  background-color: #bd9c68;
+}
+
+.cart-btn {
+  background-color: #ffffff;
+}
+
+.discover-btn:hover,
+.cart-btn:hover {
+  box-shadow: 3px 1rem 2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-1rem);
+}
